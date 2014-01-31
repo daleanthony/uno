@@ -1,15 +1,12 @@
 # Uno for Ghost
 
-***
 
 Uno for Ghost is the result of my first 'mini-project' of 2014. The theme features a minimal, responsive design with a cover page, disqus comment integration, foundation icons and various colour options.
 
-***
 
 ## Demo  
 There's a demo of the theme running on my personal website, [daleanthony.com](http://daleanthony.com)
 
-***
 
 ## Features
 
@@ -36,5 +33,3 @@ Ghost is still a work in progress with many features not yet implemented, as Gho
 
 **1 theme, 5 colour options**  
 Uno includes 5 different colour options for you to chose from.
-
-***
