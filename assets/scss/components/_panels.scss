@@ -33,21 +33,23 @@
 // COVER PANEL
 // ------------------------------
 
-.panel--cover {
-  background: url(../images/background-cover.jpg) no-repeat $gray-darker;
+.panel-cover {
+  display: block;
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  background: url(../images/background-cover.jpg) top left no-repeat $gray-darker;
   background-size: cover;
-  background-size: cover;
-  color: #FFF;
 }
 
-  .panel--cover__inner {
-    z-index: 200;
-    @include column(8);
-    @include push(2);
-    margin-top: -80px;
+  .panel-cover--collapsed {
+    width: 40%;
+    max-width: 530px;
   }
 
-  .panel--cover--overlay {
+  .panel-cover--overlay {
     display: block;
     position: absolute;
     z-index: 0;
@@ -58,21 +60,21 @@
     @include linear-gradient(140deg, rgba(#444444,.6) 20%, rgba(#000000,.9));
   }
 
-  .panel--cover__logo {
+  .panel-cover__logo {
     margin-bottom: .2em;
   }
 
-  .panel--cover__description {
+  .panel-cover__description {
     margin: 0 30px;
   }
 
-  .panel--cover__divider {
+  .panel-cover__divider {
     width: 50%;
     margin: 20px auto;
     border-top: 1px solid rgba(255,255,255,.14);
   }
 
-  .panel--cover__divider--secondary {
+  .panel-cover__divider--secondary {
     width: 15%;
   }
 
@@ -82,13 +84,8 @@
 
   .panel-main {
     display: table;
-    position: fixed;
-    z-index: 900;
     width: 100%;
-    max-width: none;
     height: 100%;
-    background: url(../images/background-cover.jpg) top left no-repeat $gray-darker;
-    background-size: cover;
   }
 
     .no-js {
@@ -98,11 +95,6 @@
         max-width: 530px;
       }
 
-    }
-
-    .panel-main--collapsed {
-      width: 40%;
-      max-width: 530px;
     }
 
     .panel-main__inner {

@@ -42,14 +42,13 @@
 
   .post-list__meta {
     display: block;
-    margin: .8em 0 0 0;
-    font-size: .7em;
+    margin: .7em 0 0 0;
+    font-size: .9em;
     color: darken($gray, 2%);
   }
 
     .post-list__meta--date {
       margin-right: .5em;
-      font-size: 1em;
       color: darken($gray, 2%);
     }
 

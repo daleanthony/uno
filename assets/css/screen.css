@@ -1186,22 +1186,21 @@ hr {
   color: #cccccc;
   -webkit-font-smoothing: antialiased; }
 
-.panel--cover {
-  background: url(../images/background-cover.jpg) no-repeat #666666;
-  background-size: cover;
-  background-size: cover;
-  color: #FFF; }
+.panel-cover {
+  display: block;
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  background: url(../images/background-cover.jpg) top left no-repeat #666666;
+  background-size: cover; }
 
-.panel--cover__inner {
-  z-index: 200;
-  display: inline;
-  float: left;
-  width: 620px;
-  margin: 0 10px;
-  margin-left: 170px;
-  margin-top: -80px; }
+.panel-cover--collapsed {
+  width: 40%;
+  max-width: 530px; }
 
-.panel--cover--overlay {
+.panel-cover--overlay {
   display: block;
   position: absolute;
   z-index: 0;
@@ -1214,35 +1213,26 @@ hr {
   background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
   background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
 
-.panel--cover__logo {
+.panel-cover__logo {
   margin-bottom: .2em; }
 
-.panel--cover__description {
+.panel-cover__description {
   margin: 0 30px; }
 
-.panel--cover__divider {
+.panel-cover__divider {
   width: 50%;
   margin: 20px auto;
   border-top: 1px solid rgba(255, 255, 255, 0.14); }
 
-.panel--cover__divider--secondary {
+.panel-cover__divider--secondary {
   width: 15%; }
 
 .panel-main {
   display: table;
-  position: fixed;
-  z-index: 900;
   width: 100%;
-  max-width: none;
-  height: 100%;
-  background: url(../images/background-cover.jpg) top left no-repeat #666666;
-  background-size: cover; }
+  height: 100%; }
 
 .no-js .panel-main {
-  width: 40%;
-  max-width: 530px; }
-
-.panel-main--collapsed {
   width: 40%;
   max-width: 530px; }
 
@@ -1445,13 +1435,12 @@ i {
 
 .post-list__meta {
   display: block;
-  margin: .8em 0 0 0;
-  font-size: .7em;
+  margin: .7em 0 0 0;
+  font-size: .9em;
   color: #c7c7c7; }
 
 .post-list__meta--date {
   margin-right: .5em;
-  font-size: 1em;
   color: #c7c7c7; }
 
 .post-list__meta--tags {
@@ -1560,7 +1549,7 @@ input[type="tel"] {
   .content-wrapper {
     margin-left: 530px; } }
 @media all and (max-width: 1100px) {
-  .panel--cover__logo {
+  .panel-cover__logo {
     width: 70px; }
 
   .panel-title {
@@ -1569,7 +1558,7 @@ input[type="tel"] {
   .panel-subtitle {
     font-size: 1em; }
 
-  .panel--cover__description {
+  .panel-cover__description {
     margin: 0 10px;
     font-size: .9em; }
 
@@ -1582,12 +1571,9 @@ input[type="tel"] {
 
   .panel-main {
     display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-position: center center; }
+    position: relative; }
 
-  .panel-main--collapsed {
+  .panel-cover--collapsed {
     width: 100%;
     max-width: none; }
 
@@ -1595,31 +1581,35 @@ input[type="tel"] {
     display: table-cell;
     padding: 60px 10%; }
 
-  .panel--cover__description {
+  .panel-cover__description {
     display: block;
     max-width: 600px;
     margin: 0 auto; }
 
-  .panel--cover__divider--secondary {
+  .panel-cover__divider--secondary {
     display: none; }
 
-  .panel-main.panel-main--collapsed {
-    display: block;
-    position: relative;
-    height: auto;
-    padding: 62px 0 30px 0;
+  .panel-cover {
+    width: 100%;
+    height: 100%;
     background-position: center center; }
-    .panel-main.panel-main--collapsed .panel-main__inner {
+    .panel-cover.panel-cover--collapsed {
       display: block;
-      padding: 0 10%; }
-    .panel-main.panel-main--collapsed .panel--cover__logo {
-      width: 60px;
-      border-width: 2px; }
-    .panel-main.panel-main--collapsed .panel--cover__description {
-      display: none; }
-    .panel-main.panel-main--collapsed .panel--cover__divider {
-      display: none;
-      margin: 1em auto; }
+      position: relative;
+      height: auto;
+      padding: 0;
+      background-position: center center; }
+      .panel-cover.panel-cover--collapsed .panel-main__inner {
+        display: block;
+        padding: 70px 0 30px 0; }
+      .panel-cover.panel-cover--collapsed .panel-cover__logo {
+        width: 60px;
+        border-width: 2px; }
+      .panel-cover.panel-cover--collapsed .panel-cover__description {
+        display: none; }
+      .panel-cover.panel-cover--collapsed .panel-cover__divider {
+        display: none;
+        margin: 1em auto; }
 
   .navigation-wrapper {
     display: none;
