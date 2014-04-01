@@ -32,7 +32,19 @@ While JS is widely used, some themes and websites don't provide fallback for whe
 Uno includes 5 different colour options for you to chose from.
 
 **Future**
-Ghost is still a work in progress with many features not yet implemented, as Ghost gets updated new features will be added to Uno. 
+Ghost is still a work in progress with many features not yet implemented, as Ghost gets updated new features will be added to Uno.
+
+## FAQs
+
+Some common questions are answered on the [Uno FAQ page](http://daleanthony.com/uno-faq/)
+
+## Contact
+
+The best way to contact me is by [dropping me an email](dale@daleanthony.com) or my messaging me on [Twitter](https://twitter.com/daleanthony)
+
+## Licence
+
+[Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)
 
 ## Development
 
@@ -83,3 +95,5 @@ This is a known issue with the [Sass on MaxOS Maverick](http://stackoverflow.com
 ```bash
 gem install rb-fsevent
 ```
+
+
