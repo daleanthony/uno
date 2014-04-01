@@ -270,7 +270,7 @@ pre {
 .logo {
   border-radius: 50%;
   border: 3px solid #FFF;
-  @include box-shadow(0 0 1px 1px rgba(000,000,000,.3));
+  box-shadow:0 0 1px 1px rgba(000,000,000,.3);
 }
 
 // ------------------------------

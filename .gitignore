@@ -1,0 +1,11 @@
+# vim ~tmp files
+*.swp
+*.un~
+
+# ignore bourbon install so that it is the latest build
+# for developers that need it
+assets/scss/bourbon/*
+
+# ignore the sass-cache/
+.sass-cache/*
+**/.sass-cache/*
