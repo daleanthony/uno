@@ -58,6 +58,7 @@ To check installation run the following commands from a terminal and you should 
 sass -v
 > Sass 3.3.4 (Maptastic Maple)
 ```
+If for some reason SASS isn't installed follow the instructions from the [Sass install page](http://sass-lang.com/install)
 
 ** Bourbon **
 ```bash
@@ -65,6 +66,7 @@ sass -v
 bourbon help
 > Bourbon 3.1.8
 ```
+If Bourbon isn't installed follow the installation instructions on the [Bourbon website](http://bourbon.io)
 
 Once installation is verified we will need to go mount the bourbon mixins into the `scss` folder.
 
@@ -95,5 +97,3 @@ This is a known issue with the [Sass on MaxOS Maverick](http://stackoverflow.com
 ```bash
 gem install rb-fsevent
 ```
-
-
