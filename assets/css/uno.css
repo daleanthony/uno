@@ -1046,6 +1046,16 @@ pre {
 .tags {
   font-size: .8em;
   color: #c7c7c7; }
+  .date a,
+  .time a,
+  .author a,
+  .tags a {
+    color: #666666; }
+    .date a:hover,
+    .time a:hover,
+    .author a:hover,
+    .tags a:hover {
+      color: #b9301c; }
 
 .excerpt {
   margin: 0;

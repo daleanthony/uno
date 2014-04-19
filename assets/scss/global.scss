@@ -179,6 +179,16 @@ pre {
 .tags {
   font-size: .8em;
   color: darken($gray, 2%);
+
+  a {
+    color: $gray-darker;
+
+    &:hover {
+      color: $hover-color;
+    }
+
+  }
+
 }
 
 .excerpt {
