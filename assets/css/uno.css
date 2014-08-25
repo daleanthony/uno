@@ -1177,6 +1177,9 @@ hr {
   margin: 2em 0;
   border-top: 1px solid #dddddd; }
 
+.error-code {
+  font-size: 6em; }
+
 .panel {
   display: table;
   width: 100%;
@@ -1223,7 +1226,6 @@ hr {
   bottom: 0;
   left: 0;
   background-color: rgba(68, 68, 68, 0.6);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(68, 68, 68, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.9)));
   background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
   background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
 
@@ -1283,25 +1285,21 @@ hr {
 
 .cover-green {
   background-color: rgba(21, 111, 120, 0.6);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(21, 111, 120, 0.6)), color-stop(100%, rgba(6, 31, 33, 0.8)));
   background-image: -webkit-linear-gradient(-410deg, rgba(21, 111, 120, 0.6) 20%, rgba(6, 31, 33, 0.8));
   background-image: linear-gradient(140deg,rgba(21, 111, 120, 0.6) 20%, rgba(6, 31, 33, 0.8)); }
 
 .cover-purple {
   background-color: rgba(73, 50, 82, 0.6);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(73, 50, 82, 0.6)), color-stop(100%, rgba(17, 11, 19, 0.8)));
   background-image: -webkit-linear-gradient(-410deg, rgba(73, 50, 82, 0.6) 20%, rgba(17, 11, 19, 0.8));
   background-image: linear-gradient(140deg,rgba(73, 50, 82, 0.6) 20%, rgba(17, 11, 19, 0.8)); }
 
 .cover-red {
   background-color: rgba(119, 31, 18, 0.6);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(119, 31, 18, 0.6)), color-stop(100%, rgba(30, 8, 5, 0.8)));
   background-image: -webkit-linear-gradient(-410deg, rgba(119, 31, 18, 0.6) 20%, rgba(30, 8, 5, 0.8));
   background-image: linear-gradient(140deg,rgba(119, 31, 18, 0.6) 20%, rgba(30, 8, 5, 0.8)); }
 
 .cover-slate {
   background-color: rgba(61, 66, 96, 0.6);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(61, 66, 96, 0.6)), color-stop(100%, rgba(21, 23, 34, 0.8)));
   background-image: -webkit-linear-gradient(-410deg, rgba(61, 66, 96, 0.6) 20%, rgba(21, 23, 34, 0.8));
   background-image: linear-gradient(140deg,rgba(61, 66, 96, 0.6) 20%, rgba(21, 23, 34, 0.8)); }
 
@@ -1516,20 +1514,6 @@ input[type="tel"] {
   input[type="search"]::-webkit-input-placeholder,
   input[type="tel"]::-webkit-input-placeholder {
     color: #cccccc; }
-  input[type="text"]:-moz-placeholder,
-  input[type="password"]:-moz-placeholder,
-  input[type="datetime"]:-moz-placeholder,
-  input[type="datetime-local"]:-moz-placeholder,
-  input[type="date"]:-moz-placeholder,
-  input[type="month"]:-moz-placeholder,
-  input[type="time"]:-moz-placeholder,
-  input[type="week"]:-moz-placeholder,
-  input[type="number"]:-moz-placeholder,
-  input[type="email"]:-moz-placeholder,
-  input[type="url"]:-moz-placeholder,
-  input[type="search"]:-moz-placeholder,
-  input[type="tel"]:-moz-placeholder {
-    color: #cccccc; }
   input[type="text"]::-moz-placeholder,
   input[type="password"]::-moz-placeholder,
   input[type="datetime"]::-moz-placeholder,
@@ -1543,6 +1527,20 @@ input[type="tel"] {
   input[type="url"]::-moz-placeholder,
   input[type="search"]::-moz-placeholder,
   input[type="tel"]::-moz-placeholder {
+    color: #cccccc; }
+  input[type="text"]:-moz-placeholder,
+  input[type="password"]:-moz-placeholder,
+  input[type="datetime"]:-moz-placeholder,
+  input[type="datetime-local"]:-moz-placeholder,
+  input[type="date"]:-moz-placeholder,
+  input[type="month"]:-moz-placeholder,
+  input[type="time"]:-moz-placeholder,
+  input[type="week"]:-moz-placeholder,
+  input[type="number"]:-moz-placeholder,
+  input[type="email"]:-moz-placeholder,
+  input[type="url"]:-moz-placeholder,
+  input[type="search"]:-moz-placeholder,
+  input[type="tel"]:-moz-placeholder {
     color: #cccccc; }
   input[type="text"]:-ms-input-placeholder,
   input[type="password"]:-ms-input-placeholder,
