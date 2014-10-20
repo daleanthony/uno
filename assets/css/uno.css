@@ -1375,7 +1375,7 @@ nav {
 
 .navigation__item {
   display: inline-block;
-  margin: 0 1px 0 0;
+  margin: 0 2px 0 0;
   line-height: 1em; }
   .navigation__item a {
     display: block;
